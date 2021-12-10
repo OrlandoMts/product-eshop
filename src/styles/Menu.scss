@@ -1,0 +1,31 @@
+.Menu {
+    min-width: 320px;
+    width: 70%;
+    height: 100vh;
+    position: relative;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    // animation: swipeLeft 0.50s ease;
+    background-color: gray;
+}
+
+.Menu .Menu__icon-close {
+    width: fit-content;
+    height: 30px;
+    cursor: pointer;
+}
+
+.Menu__content {
+    margin-top: 30px;
+}
+
+// @keyframes swipeLeft {
+// 	0% {
+// 	  width: 500px;
+// 	}
+// 	100% {
+// 	  width: 500px;
+// 	}
+//   }
