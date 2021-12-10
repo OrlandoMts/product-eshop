@@ -1,3 +1,5 @@
+@use './vars';
+
 .Header {
     display: flex;
     flex-direction: row;
@@ -52,7 +54,7 @@
         align-items: baseline;
         margin: 0 auto;
         padding: 20px;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid var(--ligth-gray);
         
         .Header--icon{
             display: none;
@@ -78,8 +80,10 @@
     }
 
     ul a {
+        font-weight: 300;
         text-decoration: none;
         margin-right: 25px;
+        color: var(--ligth-gray);
     }
 }
 
