@@ -9,7 +9,7 @@ import picture from '@images/image-avatar.png';
 
 const Header = () => {
     
-    const { toggleMenu, handleMenu } = React.useContext(AppContext);
+    const { quantity, toggleMenu, handleMenu } = React.useContext(AppContext);
 
     return (
         <nav className="Header">
@@ -33,6 +33,7 @@ const Header = () => {
                 <ul>
                     <li>
                         <img src={iconCart} alt="botton cart" className='nav--right-cart'/>
+                        {quantity > 0 ? <div>{quantity}</div> : null}
                     </li>
                     <li>
                         <img src={picture} alt="Profile photo" className='nav--right-photo'/>

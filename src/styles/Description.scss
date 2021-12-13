@@ -1,0 +1,67 @@
+@use './vars';
+
+.Description {
+    min-width: 320px;
+    width: 100%;
+    padding: 15px;
+}
+
+.Description__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    justify-content: start;
+
+    .info__company {
+        color: var(--primary-orange);
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+    }
+
+    .info__title{
+        margin-bottom: 25px;
+    }
+
+    .info__description {
+        margin-bottom: 15px;
+        line-height: 25px;
+        color: var(--ligth-gray);
+    }
+}
+
+.Description__costs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .discount--price {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .discount--price-total {
+        font-size: 40px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    .discount--price-porcentage {
+        color: var(--primary-orange);
+        background-color: var(--secondary-orange);
+        padding: 5px;
+        border-radius: 3px;
+    }
+
+    .base--price-total {
+        color: var(--ligth-gray);
+        text-decoration: line-through;
+    }
+}

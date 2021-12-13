@@ -45,6 +45,21 @@
     li .nav--right-photo {
         width: 50px;
     }
+
+    li div {
+        position: relative;
+        top: -32px;
+        right: -15px;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+        background-color: var(--primary-orange);
+        color: var(--ligth-gray);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (min-width: 640px) {
