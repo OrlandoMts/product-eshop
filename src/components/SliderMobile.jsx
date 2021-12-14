@@ -5,13 +5,14 @@ import "@styles/Slider.scss";
 import img1 from '@images/image-product-1.jpg';
 import img2 from '@images/image-product-2.jpg';
 import img3 from '@images/image-product-3.jpg';
+import img4 from '@images/image-product-4.jpg';
 
 const SliderMobile = () => {
     // renderThumbs: (children) => React.ReactChild[1];
     
     return (
         <div className='Slider'>
-            <Carousel infiniteLoop={false}
+            <Carousel infiniteLoop={true}
                 autoPlay 
                 width={420} 
                 showStatus={false} 
@@ -20,13 +21,16 @@ const SliderMobile = () => {
                 onClickThumb={() => console.log('prueba')}
                 >
                 <div> 
-                    <img src={img1} alt="" />
+                    <img src={img1} alt="product-1" />
                 </div>
                 <div>
-                    <img src={img2} alt="" />
+                    <img src={img2} alt="product-2" />
                 </div>
                 <div>
-                    <img src={img3} alt="" />
+                    <img src={img3} alt="product-3" />
+                </div>
+                <div>
+                    <img src={img4} alt="product-4" />
                 </div>
             </Carousel>
         </div>

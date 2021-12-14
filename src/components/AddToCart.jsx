@@ -5,7 +5,7 @@ import { AppContext } from '../context/AppContext';
 
 const AddToCart = () => {
 
-    const {quantity, addQuantity, removeQuantity} = React.useContext(AppContext);
+    const {quantity, addQuantity, removeQuantity, addItemToCart} = React.useContext(AppContext);
 
     return (
         <div className='AddToCart'>
@@ -15,7 +15,7 @@ const AddToCart = () => {
 				<p className='increment' onClick={() => addQuantity()}>+</p>
 			</div>
             <div className='AddToCart__btn'>
-               <button className='btn__ca' type='button'> <span><img src={iconCart} alt="cart" /></span> Add to cart</button>
+               <button className='btn__ca' type='button' onClick={()=>addItemToCart()}> <span><img src={iconCart} alt="cart" /></span> Add to cart</button>
             </div>
         </div>
     )

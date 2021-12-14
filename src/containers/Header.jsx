@@ -1,15 +1,16 @@
 import React from 'react';
 import { Menu } from '../components/Menu';
 import { AppContext } from '../context/AppContext';
+import { Cart } from '../components/Cart';
 import '../styles/Header.scss';
 import iconMenu from '@icons/icon-menu.svg';
 import logo from '@icons/logo.svg';
 import iconCart from '@icons/icon-cart.svg';
-import picture from '@images/image-avatar.png';
+import picture from '@images/mi-foto.png';
 
 const Header = () => {
     
-    const { quantity, toggleMenu, handleMenu } = React.useContext(AppContext);
+    const { quantity, toggleMenu, handleMenu, toggleCart, handleCart } = React.useContext(AppContext);
 
     return (
         <nav className="Header">
@@ -32,7 +33,7 @@ const Header = () => {
             <div className='Menu__nav--right'>
                 <ul>
                     <li>
-                        <img src={iconCart} alt="botton cart" className='nav--right-cart'/>
+                        <img src={iconCart} alt="botton cart" className='nav--right-cart' onClick={() => handleCart()}/>
                         {quantity > 0 ? <div>{quantity}</div> : null}
                     </li>
                     <li>
@@ -40,6 +41,7 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
+            {toggleCart && <Cart />}
             
         </nav>
     )
