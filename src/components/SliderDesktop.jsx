@@ -1,22 +1,21 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import "@styles/Slider.scss";
+import "@styles/SliderDesktop.scss";
 import img1 from '@images/image-product-1.jpg';
 import img2 from '@images/image-product-2.jpg';
 import img3 from '@images/image-product-3.jpg';
 import img4 from '@images/image-product-4.jpg';
 
-const SliderMobile = () => {
-    
+const SliderDesktop = () => {
     return (
-        <div className='Slider'>
+        <div className='SliderDesktop'>
             <Carousel infiniteLoop={true}
                 autoPlay 
                 width={420} 
                 showStatus={false} 
-                showIndicators={false}
-                showThumbs={false}
+                showIndicators={true}
+                showThumbs={true}
                 onClickThumb={() => console.log('prueba')}
                 >
                 <div> 
@@ -36,4 +35,4 @@ const SliderMobile = () => {
     )
 }
 
-export { SliderMobile }
+export { SliderDesktop }

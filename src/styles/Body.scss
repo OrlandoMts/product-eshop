@@ -1,3 +1,26 @@
 // .Body__carousel {
 //     display: none;
 // }
+.Body__carousel--desktop {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .Body {
+        display: flex;
+        margin-top: 30px;
+        padding: 40px;
+    }
+
+    .Body__carousel--mobile {
+        display: none;
+    }
+
+    .Body__carousel--desktop {
+        display: flex;
+    }
+
+    .Body__description {
+        margin-left: 40px;
+    }
+}

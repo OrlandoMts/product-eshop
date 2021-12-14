@@ -24,10 +24,6 @@
         cursor: pointer;
     }
 
-    .AddToCart__btn {
-        width: 90%;
-    }
-
     .btn__ca {
         width: 311px;
         height: 36px;
@@ -42,5 +38,24 @@
 
     span {
         color: white;
+    }
+}
+
+@media (min-width: 640px) {
+    .AddToCart {
+        flex-direction: row;
+
+        .AddToCart__count {
+            width: 200px;
+            height: auto;
+            margin-bottom: 0px;
+            margin-right: 10px;
+        }
+
+        .btn__ca {
+            width: 200px;
+            height: 40px;
+            margin-top: 1px;
+        }
     }
 }

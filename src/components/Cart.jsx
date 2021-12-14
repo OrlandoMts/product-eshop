@@ -25,8 +25,8 @@ const Cart = () => {
                         </div>
                         <img src={deleteItem} alt="" className='icon--delete' onClick={()=>resetQuantity()}/>
                     </div>
-                    <div className='AddToCart__btn'>
-                      <button className='btn__ca' type='button' onClick={()=>alert('Compra realizada')}>Add to cart</button>
+                    <div className='AddToCart__btn--checkout'>
+                      <button className='btn__ca' type='button' onClick={()=>alert('Compra realizada')}>Checkout</button>
                     </div>
                 </div> 
                 : 
